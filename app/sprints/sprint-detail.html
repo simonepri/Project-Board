@@ -2,7 +2,7 @@
 	<div class="container">
 		<br/>
 		<div class="row">
-			<div class="sprint-main-box">
+			<div class="sprint-box">
 				<div>
 					<br/>
 					<div style="float: left;">
@@ -39,7 +39,7 @@
 	<br/>
 		<div class="row">
 			<div ng-repeat="story in sprint.stories | filter:query" class="col-md-4">
-				<div class="story-box">
+				<div class="sprint-box">
 					<br/>
 
 					<div align="center">
@@ -52,7 +52,7 @@
 						<strong>MD:</strong> {{story.estimation}}
 					</div>
 					<br/>
-					<hr>
+					<hr/>
 					<div align="center">
 						<h4>{{story.name}}</h4>
 					</div>

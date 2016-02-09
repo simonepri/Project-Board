@@ -27,8 +27,9 @@ config([
 		];
 
 		for(var i=0; i < $rootScope.tabs.length; i++) {
-			if ($rootScope.tabs[i].link == '#'+$location.$$path) {
+			if ($rootScope.tabs[i].link == "#"+$location.$$path.substring(0, $rootScope.tabs[i].link.length-1)) {
 				$rootScope.selectedTab = $rootScope.tabs[i];
+				break;
 			}
 		}
 
