@@ -1,43 +1,57 @@
 'use strict';
 
 // Declare app level module which depends on views, and components
-angular.module('projectBoard', [
+angular.module('projectBoard',[
   'ngRoute',
   'projectBoard.team',
-  'projectBoard.sprint',
+  'projectBoard.sprints',
   'projectBoard.resources',
   'projectBoard.version'
 ]).
-config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
-  $routeProvider.otherwise({redirectTo: '/team'});
+config([
+					'$routeProvider', '$locationProvider',
+	function($routeProvider,   $locationProvider) {
+		$routeProvider
+		.otherwise({redirectTo: '/team'});
+		// make this demo work in plunker
+		$locationProvider.html5Mode(false);
+	}
+])
+.controller('TabsCtrl', [
+	        '$rootScope', '$location',
+	function($rootScope,   $location) {
+		$rootScope.tabs = [
+			{ link : '#/team', label : 'Team' },
+			{ link : '#/sprints', label : 'Sprints' },
+			{ link : '#/resources', label : 'Resources' }
+		];
 
-  // make this demo work in plunker
-  $locationProvider.html5Mode(false);
+		for(var i=0; i < $rootScope.tabs.length; i++) {
+			if ($rootScope.tabs[i].link == '#'+$location.$$path) {
+				$rootScope.selectedTab = $rootScope.tabs[i];
+			}
+		}
 
-}])
+		$rootScope.setSelectedTab = function(tab) {
+			$rootScope.selectedTab = tab;
+		}
 
-.controller('TabsCtrl', ['$scope', '$location', function($scope, $location) {
-    $scope.tabs = [
-      { link : '#/team', label : 'Team' },
-      { link : '#/sprint', label : 'Sprint' },
-      { link : '#/resources', label : 'Resources' }
-    ];
-
-    for (var i=0; i < $scope.tabs.length; i++) {
-        if ($scope.tabs[i].link == '#'+$location.$$path) {
-            $scope.selectedTab = $scope.tabs[i];
-        }
-    }
-
-    $scope.setSelectedTab = function(tab) {
-      $scope.selectedTab = tab;
-    }
-
-    $scope.tabClass = function(tab) {
-      if ($scope.selectedTab == tab) {
-        return "active";
-      } else {
-        return "";
-      }
-    }
-}]);
+		$rootScope.tabClass = function(tab) {
+			if($rootScope.selectedTab == tab) {
+				return "active";
+			}
+			else {
+				return "";
+			}
+		}
+	}
+])
+.run([
+	        '$rootScope', '$http',
+	function($rootScope,   $http) {
+		$http.get('data.json?nocache='+(new Date()).getTime())
+		.success(function(data) {
+			$rootScope.data = data;
+		});
+	}
+]);

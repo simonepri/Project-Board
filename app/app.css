@@ -49,12 +49,13 @@
 /* SPRINT */
 
 .sprint-box {
-    display: block;
-    border: solid;
-    border-color: lightblue;
-    border-width: thin;
-    margin: 0.4em;
-    background-color: white;
+	display: block;
+	border: solid;
+	border-color: lightblue;
+	border-width: thin;
+	margin: 0.4em;
+	padding: 0.4em;
+	background-color: white;
 }
 
 .sprint-box-dates div {
@@ -68,12 +69,12 @@
 }
 
 .sprint-main-box {
-    display: block;
-    border: double;
-    border-color: lightblue;
-    border-width: initial;
-    padding: 0.3em;
-    background-color: white;
+	display: block;
+	border: double;
+	border-color: lightblue;
+	border-width: initial;
+	padding: 0.3em;
+	background-color: white;
 }
 
 /* STORY */
@@ -84,30 +85,29 @@
 }
 
 .story-box {
-    display: block;
-    border: solid;
-    border-color: lightblue;
-    border-width: thin;
-    max-width: 30%;
-    margin-bottom: 4em;
-    margin-left: 0.5em;
-    background-color: white;
+	display: block;
+	border: solid;
+	border-color: lightblue;
+	border-width: thin;
+	margin: 0.4em;
+	padding: 0.4em;
+	background-color: white;
 }
 
 .container-story {
-    padding-left: 5.5em;
+	padding-left: 5.5em;
 }
 
 /* RESOURCES */
 
 .resources-box {
-    display: block;
-    border: solid;
-    border-color: lightblue;
-    border-width: 0.1em;
-    margin-top: 0.8em;
-    padding: 0.3em;
-    background-color: white;
+	display: block;
+	border: solid;
+	border-color: lightblue;
+	border-width: 0.1em;
+	margin-top: 0.8em;
+	padding: 0.3em;
+	background-color: white;
 }
 
 .social {

@@ -1,8 +1,11 @@
 'use strict';
 
-angular.module('projectBoard.version', [
-  'projectBoard.version.interpolate-filter',
-  'projectBoard.version.version-directive'
-])
+angular.module('projectBoard.version', [])
 
-.value('version', '0.1');
+.value('version', '1.0.0')
+
+.directive('appVersion', ['version', function(version) {
+  return function(scope, elm, attrs) {
+    elm.text(version);
+  };
+}]);
