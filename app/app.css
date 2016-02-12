@@ -142,12 +142,16 @@ html,body {
 /* SPRINT */
 
 .sprint-box {
-    display: block;
-    border: solid;
-    border-color: lightblue;
-    border-width: thin;
-    margin: 0.4em;
-    background-color: white;
+	display: block;
+	padding: 0 10px 10px 10px;
+	background-color: white;
+	box-shadow: 0px 1px 2px rgba(24, 24, 24, 0.1);
+	border: 1px solid #ccc;
+	border-radius: 2px;
+}
+.sprint-box hr{
+	margin-left: -10px;
+	margin-right: -10px;
 }
 
 .sprint-box-dates div {
@@ -161,12 +165,12 @@ html,body {
 }
 
 .sprint-main-box {
-    display: block;
-    border: double;
-    border-color: lightblue;
-    border-width: initial;
-    padding: 0.3em;
-    background-color: white;
+	display: block;
+	border: double;
+	border-color: lightblue;
+	border-width: initial;
+	padding: 0.3em;
+	background-color: white;
 }
 
 /* STORY */
@@ -176,31 +180,20 @@ html,body {
   clear: none;
 }
 
-.story-box {
-    display: block;
-    border: solid;
-    border-color: lightblue;
-    border-width: thin;
-    max-width: 30%;
-    margin-bottom: 4em;
-    margin-left: 0.5em;
-    background-color: white;
-}
-
 .container-story {
-    padding-left: 5.5em;
+	padding-left: 5.5em;
 }
 
 /* RESOURCES */
 
 .resources-box {
-    display: block;
-    border: solid;
-    border-color: lightblue;
-    border-width: 0.1em;
-    margin-top: 0.8em;
-    padding: 0.3em;
-    background-color: white;
+	display: block;
+	margin-top: 10px;
+	padding: 10px 10px 10px 10px;
+	background-color: white;
+	box-shadow: 0px 1px 2px rgba(24, 24, 24, 0.1);
+	border: 1px solid #ccc;
+	border-radius: 2px;
 }
 
 .social {
@@ -210,11 +203,6 @@ html,body {
 /* TEAM */
 .our-team {
   text-align: center;
-}
-
-/* Just for mario and luigi pics */
-.img-circle {
-  max-height: 7em;
 }
 
 .l_d {
