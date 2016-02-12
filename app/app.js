@@ -22,12 +22,18 @@ config(['$routeProvider', '$locationProvider', function($routeProvider, $locatio
       { link : '#/sprint', label : 'Sprint' },
       { link : '#/resources', label : 'Resources' }
     ];
-
-    for (var i=0; i < $scope.tabs.length; i++) {
-        if ($scope.tabs[i].link == '#'+$location.$$path) {
-            $scope.selectedTab = $scope.tabs[i];
-        }
-    }
+	
+		if("#"+$location.$$path === "#") {
+			$scope.selectedTab = $scope.tabs[0];
+		}
+		else {
+			for(var i=0; i < $scope.tabs.length; i++) {
+				if ($scope.tabs[i].link == "#"+$location.$$path.substring(0, $scope.tabs[i].link.length-1)) {
+					$scope.selectedTab = $scope.tabs[i];
+					break;
+				}
+			}
+		}
 
     $scope.setSelectedTab = function(tab) {
       $scope.selectedTab = tab;
