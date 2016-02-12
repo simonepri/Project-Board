@@ -10,7 +10,7 @@ angular.module('projectBoard.resources', ['ngRoute'])
 }])
 
 .controller('ResourcesCtrl', ['$scope', '$http', function($scope, $http) {
-    $http.get('resources/resources.json?nocache='+(new Date()).getTime())
+    $http.jsonp('resources/resources.json?nocache='+(new Date()).getTime())
       .success(function(data){
         $scope.resources = data;
     });
