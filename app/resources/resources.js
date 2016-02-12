@@ -9,9 +9,9 @@ angular.module('projectBoard.resources', ['ngRoute'])
   });
 }])
 
-.controller('ResourcesCtrl', [
-	         '$scope',
-	function ($scope) {
-		$scope.resources = $scope.data.resources;
-	}
-]);
+.controller('ResourcesCtrl', ['$scope', '$http', function($scope, $http) {
+    $http.get('resources/resources.json?nocache='+(new Date()).getTime())
+      .success(function(data){
+        $scope.resources = data;
+    });
+}]);
