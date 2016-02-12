@@ -1,8 +1,8 @@
 {
-  "name": "angular-seed",
-  "description": "A starter project for AngularJS",
-  "version": "0.0.0",
-  "homepage": "https://github.com/angular/angular-seed",
+  "name": "Project-Board",
+  "description": "Startups' Project Board",
+  "version": "0.2.0",
+  "homepage": "https://github.com/MG84/Project-Board/",
   "license": "MIT",
   "private": true,
   "dependencies": {

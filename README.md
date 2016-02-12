@@ -1,4 +1,4 @@
-# Project-Board
+# Project-Board 0.2.0
 
 ## Install
 
