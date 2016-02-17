@@ -1,4 +1,4 @@
-# Project-Board 0.2.0
+# Project-Board 0.3.0
 
 ## Install
 
@@ -154,8 +154,8 @@ This file contains all the stories you have planned to work on during the sprint
     "importance": "In a range from 0 to 100",
     "estimation": "Estimation in MD",
     "demo": "What are you going to show at the demo for this story",
-    "notes": "additional notes, if any",
-    "links": "important links, if any",
+    "details": "additional info, if any",
+    "results": "Story results, if any",
     "assigned": "Member and MD, Member and MD"
   },
   ...
