@@ -15,7 +15,7 @@
         "estimation": "4",
         "demo": "Screenshot new booked tours",
         "details": "We have to make those tours more appealing",
-        "results": "We have orginzed only 5 guided tours because there was an unexpected disaster. <a heref=\"#\">More info here</a>",
+        "results": "We have only organized 5 guided tours because there had been an unexpected disaster. <a href=\"#\">More info here</a>",
         "assigned": "Mario 3, Luigi 1"
       },
       {
@@ -26,7 +26,7 @@
         "estimation": "3",
         "demo": "Show Data",
         "details": "Ask <a heref=\"#\">Uncle Sam</a> for some useful tips",
-        "results": "We have incresed our returning user more than expected thanks to Uncle Sam's tips. We have increased it by 63%. You can see data <a heref=\"#\">here</a>",
+        "results": "We have increased our returning user more than expected thanks to Uncle Sam's tips. We have increased it by 63%. You can see data <a heref=\"#\">here</a>",
         "assigned": "Luigi 3"
       }
     ]

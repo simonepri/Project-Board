@@ -5,4 +5,4 @@ angular.module('projectBoard.version', [
   'projectBoard.version.version-directive'
 ])
 
-.value('version', '0.2.0');
+.value('version', '0.3.0');
