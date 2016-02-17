@@ -1,21 +1,21 @@
 <div class="team" ng-if="team !== undefined">
-	<div class="container">
-		<h1>Welcome to our team</h1>
+  <div class="container">
+    <h1>Welcome to our team</h1>
 
-		<div class="row">
-			<div class="col-sm-3 col-md-3 col-sm-offset-2" ng-repeat="member in team">
-				<div class="circle">
-					<img ng-src="{{member.avatar}}" alt="{{member.name}}"/>
-				</div>
-					<div class="caption">
-						<h3>{{member.name}}</h3>
-						<p>{{member.role}}</p>
-						<p>
-							<a role="button" class="btn btn-default" ng-href="mailto:{{member.email}}"><i class="fa fa-envelope"></i></a>
-							<a role="button" class="btn btn-default" ng-href="{{social.link}}" ng-repeat="social in member.social" style="margin-right: 5px"><i class="fa fa-{{social.name}}"></i></a>
-						</p>
-					</div>
-			</div>
-		</div>
-	</div>
+    <div class="row">
+      <div class="col-sm-3 col-md-3 col-sm-offset-2" ng-repeat="member in team">
+        <div class="circle">
+          <img ng-src="{{member.avatar}}" alt="{{member.name}}"/>
+        </div>
+          <div class="caption">
+            <h3>{{member.name}}</h3>
+            <p>{{member.role}}</p>
+            <p>
+              <a role="button" class="btn btn-default" ng-href="mailto:{{member.email}}"><i class="fa fa-envelope"></i></a>
+              <a role="button" class="btn btn-default" ng-href="{{social.link}}" ng-repeat="social in member.social" style="margin-right: 5px"><i class="fa fa-{{social.name}}"></i></a>
+            </p>
+          </div>
+      </div>
+    </div>
+  </div>
 </div>

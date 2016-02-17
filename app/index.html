@@ -14,16 +14,16 @@
   <link rel="stylesheet" href="app.css">
 </head>
 <body>
-	<div class="site-wrapper">
-		<div class="site-wrapper-inner">
-			<div class="cover-container">
-				<div class="inner cover">
-					<h1 class="cover-heading">My Startup's Project Board</h1>
-					<p class="lead">Visit our website at <a href="http://www.google.it/" target="_blank">http://my_startup.com</a></p>
-				</div>
-			</div>
-		</div>
-	</div>
+  <div class="site-wrapper">
+    <div class="site-wrapper-inner">
+      <div class="cover-container">
+        <div class="inner cover">
+          <h1 class="cover-heading">My Startup's Project Board</h1>
+          <p class="lead">Visit our website at <a href="http://www.google.it/" target="_blank">http://my_startup.com</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <ul class="nav nav-tabs" ng-controller="TabsCtrl">
     <li ng-class="tabClass(tab)" ng-repeat="tab in tabs" tab="tab">
@@ -32,7 +32,7 @@
   </ul>
 
   <!--[if lt IE 7]>
-		<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
   <![endif]-->
 
   <div ng-view></div>
@@ -43,12 +43,12 @@
   <script src="bower_components/angular/angular.min.js"></script>
   <script src="bower_components/angular-route/angular-route.min.js"></script>
   <script src="bower_components/angular-sanitize/angular-sanitize.min.js"></script>
-	<!-- In dev use: -->
-	<!--
+  <!-- In dev use: -->
+  <!--
   <script src="bower_components/angular/angular.js"></script>
   <script src="bower_components/angular-route/angular-route.js"></script>
   <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
-	-->
+  -->
 
   <script src="app.js"></script>
   <script src="team/team.js"></script>
